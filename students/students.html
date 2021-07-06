@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Contact Form - PHP/MySQL Demo Code</title>
+<!-- Latest compiled and minified CSS -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+<style>
+  @media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.sidenav a, .dropdown-btn {
+  padding: 6% 8% 6% 16%;
+  text-decoration: none;
+  font-size: 100%;
+  color: white;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+.main {
+  margin-left: 15%; /* Same as the width of the sidenav */
+  font-size: 100; /* Increased text to enable scrolling */
+}
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+img{
+    margin-left: 10%;
+    background-color: white;
+    
+}
+
+.my-float{
+	margin-top:22px;
+}
+.hidetext {
+    -webkit-text-security: circle;
+     }
+     .sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #00135D;
+  overflow-x: hidden;
+  padding-top: 20px;
+  color: #262626;
+}
+</style>
+
+</head>
+
+<body class="main">
+
+<div class="container">
+<div class="py-5 text-center">
+        <img class="d-block mx-auto mb-4" src="./../images/Hit.png" alt="" width="240" height="64">
+        <h2>ADD ADMIN</h2>
+        
+      </div>
+      <div class="sidenav">
+        <img src="./../images/Hit.png">
+        <a href="./../home.html">DashBoard</a>
+        <a href="../students/students.html">Students</a>
+        <a href="../news/news.html">News</a>
+        <a href="../posts/posts.php">Posts</a>
+        <a href="../Admin/contact.html">Admin</a>
+        
+       </div>
+<fieldset>
+  
+  <form name="frmContact" class="needs-validation " method="post" action="index.php">
+    <p>
+      <label for="FName">Firstname </label>
+      <input type="text" class="form-control" name="txtFName" id="txtFName" placeholder="Firstname" value="" required>
+	  <div class="invalid-feedback">
+                  Valid username is required.
+                </div>
+    </p>
+    <p>
+      <label for="MName">Middle Name</label>
+      <input type="text"  class="form-control"  name="txtMName" id="txtMName" placeholder="Middle Name(Optional)" value="" >
+    </p>
+    <p>
+      <label for="SName">Surname</label>
+      <input type="text"  class="form-control"  name="txtSName" id="txtSName" placeholder="Surname" value="" required>
+    </p>
+    <p>
+      <label for="email">Email</label>
+      <input type="text"  class="form-control"  name="txtEmail" id="txtEmail" placeholder="Email" value="" required>
+    </p>
+    <p>
+      <label for="Phone">Phone Number</label>
+      <input type="text"  class="form-control"  name="txtPhone" id="txtPhone" placeholder="Mobile Number" value="" required>
+    </p>
+    <p>
+      <label for="Registration">Registration Number</label>
+      <input type="text"  class="form-control"  name="txtReg" id="txtReg" placeholder="Registration Number" value="" required>
+    </p>
+    <p>
+      <label for="Programme">Programme</label>
+      <input type="text"  class="form-control"  name="txtProgramme" id="txtProgramme" placeholder="Programme" value="" required>
+    </p>
+    <p>
+      <label for="Gender">Gender</label>
+      <input type="text"  class="form-control"  name="txtGender" id="txtGender" placeholder="Gender" value="" required>
+    </p>
+    <p>
+      <label for="DOB">Date of Birth</label>
+      <input type="text"  class="form-control"  name="txtDOB" id="txtDOB" placeholder="Date Of Birth" value="" required>
+    </p>
+    <p>&nbsp;</p>
+    <p>
+      <input type="submit" name="Submit" id="Submit" value="Add New Student"  class="btn btn-primary btn-lg btn-block">
+    </p>
+  </form>
+</fieldset>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+</html>
