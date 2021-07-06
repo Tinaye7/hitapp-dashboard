@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #00135D;
+  overflow-x: hidden;
+  padding-top: 20px;
+  color: #262626;
+}
+.table {
+    width: 100%;
+}
+.trow{
+    font-size: large;
+    width: 100%;
+
+    ;
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#00135D;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+img{
+    margin-left: 10%;
+    background-color: white;
+    
+}
+
+.my-float{
+	margin-top:22px;
+}
+.hidetext {
+    -webkit-text-security: circle;
+     }
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+td{
+    
+    text-align: center;
+    
+}
+ /* Style buttons */
+ .btn {
+  background-color: #00135D; /* Blue background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 12px 16px; /* Some padding */
+  font-size: 100%; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  
+  background-color: #00135D;
+} 
+
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 6% 8% 6% 16%;
+  text-decoration: none;
+  font-size: 100%;
+  color: white;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+/* Main content */
+.main {
+  margin-left: 15%; /* Same as the width of the sidenav */
+  font-size: 100; /* Increased text to enable scrolling */
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: green;
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div class="sidenav">
+    <img src="./images/Hit.png">
+    <a href="">DashBoard</a>
+    <a href="./students/students.html">Students</a>
+    <a href="./news/news.html">News</a>
+    <a href="./posts/posts.php">Posts</a>
+    <a href="./Admin/contact.html">Admin</a>
+    <a href="logout.php"><i class="fas fa-sign-out-alt"></i>Logout</a>
+   </div>
+<a href="#" class="float">
+    <i class="fa fa-plus my-float"></i>
+    </a>
+<div class="main">
+  <img src="./images/Hit.png">
+  <h1>Welcome To The HIT MOBILE APP Dashboard</h1>
+  <p><h4><i>PLEASE SELECT OPTION ON THE SIDE NAVIGATION BAR TO PROCEED</i></h4></p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+</script>
+
+</body>
+</html> 
